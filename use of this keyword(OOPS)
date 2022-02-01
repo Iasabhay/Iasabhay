@@ -1,0 +1,29 @@
+// use of this keyword
+
+class M {
+    
+    int i;
+    int getI() {
+        return i;
+    }
+}
+
+class n extends M {
+    int a, b;
+    
+    void sum(int a, int b) {
+    int d = getI();
+    this.a = a;
+    this.b = b;
+    System.out.println("sum is:"+(a+b+d));
+    }
+}
+
+public class Main {
+    public static void main(String args[]) {
+        n on = new n();
+        
+        on.i = 50;
+        on.sum(40,67);
+    }
+}
