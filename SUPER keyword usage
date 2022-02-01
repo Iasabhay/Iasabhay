@@ -1,0 +1,57 @@
+// use of super keyword without invoking explicitly
+
+/*class Parent {
+
+   Parent() {
+       System.out.println("Constructor of parent class");
+   }
+}
+
+class Sub extends Parent {
+    
+    Sub() {
+        System.out.println("Constructor of child");
+    }
+    
+    void display() {
+        System.out.println("Hello");
+    }
+}
+
+public class Main {
+    public static void main(String args []) {
+        Sub ob = new Sub();
+        
+        ob.display();
+    }
+}*/
+
+// use of super keyword explicitly
+
+class Parent {
+    
+    Parent(int i) {
+        System.out.println("Parent constructor");
+    }
+}
+
+class Sub extends Parent {
+    
+    Sub() {
+    
+    super(6);
+        System.out.println("SubClass");
+    }
+    void display() {
+        System.out.println("Hello");
+    
+}
+}
+
+public class Main {
+    public static void main(String args []) {
+        Sub ob = new Sub();
+        
+        ob.display();
+    }
+}
